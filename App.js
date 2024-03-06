@@ -1,10 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { withAuthenticator } from '@aws-amplify/ui-react';
 
-export default function App() {
+import { StyleSheet, Text, View } from 'react-native';
+import { Amplify, Auth } from 'aws-amplify';
+import amplifyconfig from './src/amplifyconfiguration.json';
+Amplify.configure(amplifyconfig);
+
+const  App=()=> {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Holla , como estan amigos</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -18,3 +23,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+export default withAuthenticator(App);
