@@ -1,0 +1,56 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-langapp-dev-95525-authRole",
+      "UnauthRoleArn": "arn:aws:iam::851725402288:role/amplify-langapp-dev-95525-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::851725402288:role/amplify-langapp-dev-95525-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-langapp-dev-95525-deployment",
+      "UnauthRoleName": "amplify-langapp-dev-95525-unauthRole",
+      "StackName": "amplify-langapp-dev-95525",
+      "StackId": "arn:aws:cloudformation:us-east-1:851725402288:stack/amplify-langapp-dev-95525/86706ec0-db86-11ee-b2a0-12fce309f4e1",
+      "AmplifyAppId": "d3qsxya9nqmvs6"
+    }
+  },
+  "auth": {
+    "LangApp": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 6,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-langapp-dev-95525-deployment/amplify-cfn-templates/auth/LangApp-cloudformation-template.json",
+        "logicalId": "authLangApp"
+      },
+      "lastPushTimeStamp": "2024-03-06T07:16:41.752Z",
+      "output": {
+        "UserPoolId": "us-east-1_ZbFBS6B4a",
+        "AppClientIDWeb": "13kttd2j9aar8uqdgb6t3jpmc1",
+        "AppClientID": "2j87qkanhksi05s2slr2s1u47p",
+        "IdentityPoolId": "us-east-1:ae9eae7d-a12c-4fda-9132-54427b0050e3",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:851725402288:userpool/us-east-1_ZbFBS6B4a",
+        "IdentityPoolName": "testAuthIdentityPool__dev",
+        "UserPoolName": "LangApp"
+      },
+      "lastPushDirHash": "0B1g8+aKTV8UmkcsF5gFOVLTcrM="
+    }
+  }
+}
